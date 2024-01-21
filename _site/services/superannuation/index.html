@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Deciphering Genomic Diversity: A Data-Driven Approach</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
+  <!-- Google Fonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Self host font -->
+  <!-- <link rel="preload" href="/assets/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin> -->
+  <link href="/assets/css/style.css" rel="stylesheet">
+  
+  
+  <meta property="og:title" content="Deciphering Genomic Diversity: A Data-Driven Approach"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content=""/>
+  
+  
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content=""/>
+  <meta name="twitter:creator" content=""/>
+
+</head>
+
+<body class='page page-service'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/services/">Projects</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Publications</a>
+    </li>
+    
+    <li class="">
+      <a href="/contact/">Contact</a>
+    </li>
+    
+  </ul>
+</div>
+
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="main-website">
+      <a href="/">Home</a>
+    </div>
+    
+    <div id="main-menu" class="main-menu">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/services/">Projects</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Publications</a>
+    </li>
+    
+    <li class="">
+      <a href="/contact/">Contact</a>
+    </li>
+    
+  </ul>
+</div>
+
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+    <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="service service-single">
+        <h1 class="title">Deciphering Genomic Diversity: A Data-Driven Approach</h1>
+        <div class="content"><p>Analyzing genomic data across multiple species, this study delves into genome sizes, chromosome specifics, and nucleotide composition. It encompasses simulations of sequencing coverage and a detailed examination of GC content, shedding light on the diversity and complexity of genomic structures.</p>
+
+<p><img src="https://i.ibb.co/wztqfJk/gdc-data-harmonization-pipeline-1.png" alt="genomic" /></p>
+
+<h2 id="abstract">Abstract</h2>
+
+<p>In an era where genomic data is exponentially expanding, understanding the diversity and complexity of genetic information across various species is paramount. This project presents a comparative genomic analysis across a broad spectrum of organisms, ranging from plants and animals to bacteria and yeasts. By examining genome sizes, chromosome specifics, and nucleotide compositions, the study aims to uncover fundamental patterns and variations in genetic makeup, offering a window into the evolutionary relationships and functional genomics of diverse life forms.</p>
+
+<h2 id="objectives">Objectives</h2>
+
+<ul>
+  <li><strong>Comparative Genomic Analysis:</strong> To compare and contrast the genomic characteristics (such as genome size, chromosome count, and chromosome sizes) across various species.</li>
+  <li><strong>Identification of Genomic Diversity:</strong> To identify and quantify the diversity in genome structures among different species, including plants, animals, bacteria, and yeasts.</li>
+  <li><strong>Foundation for Further Genomic Studies:</strong> To provide a comprehensive dataset that can be used as a foundation for further research in genetics, molecular biology, and evolutionary biology.</li>
+</ul>
+
+<h2 id="relevance">Relevance</h2>
+
+<p>This genomic analysis project showcases the efficient handling and management of large-scale genomic datasets, a fundamental aspect of data science that involves sophisticated data processing and management skills. The use of statistical methods and pattern recognition for analyzing genomic structures underscores the importance of these techniques in extracting meaningful insights from complex datasets. Additionally, the project emphasizes the role of data visualization in data science, illustrating how complex data can be presented in an understandable and informative manner. This aspect is crucial for effective communication and decision-making in data science. Furthermore, the project exemplifies the interdisciplinary nature of data science, highlighting its utility in bridging various scientific fields and fostering innovation. In essence, the approach to handling, analyzing, and visualizing complex genomic data in this project is a testament to the practical applications and versatility of data science methodologies in real-world research contexts.</p>
+
+<h2 id="methodology">Methodology</h2>
+
+<h3 id="genomic-data-collection-and-analysis-sections-11---15">Genomic Data Collection and Analysis (Sections 1.1 - 1.5)</h3>
+
+<ol>
+  <li><strong>Data Acquisition:</strong>
+    <ul>
+      <li>The project utilizes genomic data from various species, including ‘TAIR10’, ‘ce10’, ‘dm6’, ‘ecoli’, ‘hg38’, ‘tomato’, ‘wheat’, and ‘yeast’.</li>
+      <li>Each data file (*.chrom.sizes) contains information about chromosome sizes for the respective species.</li>
+    </ul>
+  </li>
+  <li><strong>Data Processing:</strong>
+    <ul>
+      <li>Python and Pandas are used for data manipulation.</li>
+      <li>A custom function, question_1, iterates through each genomic data file.</li>
+      <li>The function reads each file, extracting chromosome names and sizes, and calculates the total genome size, the number of chromosomes, and the sizes of the largest and smallest chromosomes, along with the mean chromosome length.</li>
+    </ul>
+  </li>
+  <li><strong>Data Aggregation:</strong>
+    <ul>
+      <li>Results are compiled into lists for each species, including genome size, chromosome count, and other metrics.</li>
+      <li>These lists are then combined into a structured Pandas DataFrame, providing a comprehensive overview for comparative analysis.</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="sequencing-coverage-simulation-sections-22---24">Sequencing Coverage Simulation (Sections 2.2 - 2.4)</h3>
+
+<ol>
+  <li><strong>Simulation Setup:</strong>
+    <ul>
+      <li>A Python script simulates sequencing coverage for a 1Mbp genome using 100bp reads.</li>
+      <li>Random sampling is used to generate sequences, and the SequenceMatcher tool is employed to calculate coverage.</li>
+    </ul>
+  </li>
+  <li><strong>Coverage Analysis:</strong>
+    <ul>
+      <li>Two scenarios are analyzed: 5x and 15x coverage.</li>
+      <li>The number of reads needed for each coverage level is calculated (500 reads for 5x coverage and 1500 reads for 15x coverage).</li>
+      <li>Histograms of coverage distributions are plotted and overlaid with Poisson distributions for each scenario.</li>
+    </ul>
+  </li>
+  <li><strong>Evaluation of Coverage:</strong>
+    <ul>
+      <li>The number of bases with 0x coverage is computed.</li>
+      <li>The results are compared with Poisson expectations to evaluate the accuracy and efficiency of the sequencing.</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="nucleotide-composition-analysis-sections-31---33">Nucleotide Composition Analysis (Sections 3.1 - 3.3)</h3>
+
+<ol>
+  <li><strong>Sequence Data Extraction:</strong>
+    <ul>
+      <li>The project analyzes the nucleotide composition of chromosome 22, extracting the sequence from a data file (chr22.fa).</li>
+      <li>The sequence is processed to count the occurrences of each nucleotide (A, C, G, T, and N).</li>
+    </ul>
+  </li>
+  <li><strong>Window-Based Analysis:</strong>
+    <ul>
+      <li>The chromosome is divided into 100bp non-overlapping windows (bins).</li>
+      <li>The number of bins containing at least one ‘N’ nucleotide is calculated.</li>
+      <li>For bins without ‘N’s, the GC content is calculated.</li>
+    </ul>
+  </li>
+  <li><strong>GC Content Visualization:</strong>
+    <ul>
+      <li>A histogram is created to visualize the distribution of GC content across the chromosome.</li>
+      <li>The histogram provides insights into the sequencing quality and regions that might sequence poorly.</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="comparative-genomic-analysis-across-multiple-species">Comparative Genomic Analysis Across Multiple Species</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>Genome Size</th>
+      <th>Number of Chromosomes</th>
+      <th>Largest Chromosomes</th>
+      <th>Smallest Chromosome</th>
+      <th>Mean Chromosome</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TAIR10</td>
+      <td>119146348</td>
+      <td>5</td>
+      <td>Chr1</td>
+      <td>Chr4</td>
+      <td>23829269</td>
+    </tr>
+    <tr>
+      <td>ce10</td>
+      <td>100286070</td>
+      <td>7</td>
+      <td>chrV</td>
+      <td>chrM</td>
+      <td>14326581</td>
+    </tr>
+    <tr>
+      <td>dm6</td>
+      <td>137547960</td>
+      <td>7</td>
+      <td>chr3R</td>
+      <td>chr4</td>
+      <td>19649708</td>
+    </tr>
+    <tr>
+      <td>ecoli</td>
+      <td>4639211</td>
+      <td>1</td>
+      <td>Ecoli</td>
+      <td>Ecoli</td>
+      <td>4639211</td>
+    </tr>
+    <tr>
+      <td>hg38</td>
+      <td>3088269832</td>
+      <td>24</td>
+      <td>chr1</td>
+      <td>chr21</td>
+      <td>128677909</td>
+    </tr>
+    <tr>
+      <td>tomato</td>
+      <td>782520033</td>
+      <td>13</td>
+      <td>ch01</td>
+      <td>ch00</td>
+      <td>60193848</td>
+    </tr>
+    <tr>
+      <td>wheat</td>
+      <td>14547261565</td>
+      <td>22</td>
+      <td>3B</td>
+      <td>6D</td>
+      <td>661239162</td>
+    </tr>
+    <tr>
+      <td>yeast</td>
+      <td>12157105</td>
+      <td>17</td>
+      <td>chrIV</td>
+      <td>chrM</td>
+      <td>715123</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="data-visualization">Data Visualization</h2>
+
+<p>Histogram representing the percentage of guanine (G) and cytosine (C) bases, commonly known as the GC content, in each bin of the chromosome, excluding bins that contain ‘N’ nucleotides. It plots the number of bins against their respective GC percentages. The x-axis represents the GC content percentage, while the y-axis shows the number of bins with that specific GC content.</p>
+
+<p><img src="https://i.ibb.co/JtZHPwt/Screenshot-from-2024-01-21-01-44-53.png" alt="data1" /></p>
+
+<p>The findings from chromosome 22 are then extrapolated to the entire human genome. The total genome size, computed in an earlier part of the project, serves as the basis for this extrapolation. By applying the proportion of poorly sequenced bases in chromosome 22 to the entire genome size, an estimate is made of the total number of bases in the human genome that could be sequenced poorly.</p>
+
+<p><img src="https://i.ibb.co/6y0yLHV/Screenshot-from-2024-01-21-01-45-05.png" alt="data2" /></p>
+
+<h2 id="analysis">Analysis</h2>
+
+<p>The project’s comprehensive analysis began with the assessment of genomic data from eight different species, revealing a broad spectrum of genomic sizes and complexities. The data unveiled that the genome sizes ranged from as small as approximately 4.64 Mbp in E. coli to as vast as approximately 14.55 Gbp in wheat, illustrating the wide genetic diversity across species. Chromosome counts varied, with E. coli having a single circular chromosome, while humans (hg38) possess 24 distinct chromosomes. The largest chromosome identified was chromosome 1 in humans, spanning over 248 Mbp, whereas the smallest was the mitochondrial chromosome in yeast, underlining the vast differences in chromosome sizes and their potential functional implications.</p>
+
+<p>The sequencing coverage simulations provided further insights. The histogram outputs from the 5x and 15x coverage simulations showed a skewed distribution of coverage, with a significant number of sequences falling below the expected average coverage, indicating potential sequencing gaps. The discrepancy from Poisson expectations suggested the presence of a bias in sequencing, which might be attributed to various biological factors such as GC content, which can affect the efficiency of sequencing.</p>
+
+<p>The nucleotide composition analysis of chromosome 22 demonstrated a prevalence of adenine and thymine over cytosine and guanine, while a considerable amount of the chromosome comprised unidentified nucleotides (Ns). This was further quantified by the window analysis, where bins were analyzed for the presence of ‘N’s, and nearly 116,637 bins were found to contain at least one ‘N’. The GC content histogram revealed a normal distribution, with a notable number of bins having extremely low or high GC content, which correlates with regions known to be difficult to sequence, hence likely to be sequenced poorly.</p>
+
+<p>The visual data from the histograms indicated a significant portion of the genome with extreme GC content, which is known to pose challenges in sequencing due to secondary structures and polymerase bias. These results, extrapolated to the entire human genome, suggest that around 700,250 bins without any ‘N’s are expected to sequence poorly, further asserting the importance of understanding genomic composition for sequencing efforts.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>The findings from the comparative genomic analysis underscore the intricate diversity in genetic composition among species. The project highlighted the crucial interplay between genome size, chromosome structure, and nucleotide composition and their collective impact on sequencing. The histograms and statistical analyses provided a tangible representation of the sequencing coverage and nucleotide distribution, offering a microcosmic view of the genomic landscape. The study concluded that while technological advancements have significantly improved sequencing capabilities, challenges remain, especially in regions with high or low GC content, and in accurately representing repetitive sequences and regions with unidentified nucleotides. These insights not only contribute to the field of genomics but also enhance the understanding of genomic data’s complexity, paving the way for improved sequencing techniques and more accurate genomic assemblies. The project stands as a testament to the pivotal role of data science in translating raw genomic data into actionable genomic knowledge.</p>
+
+<h2 id="faithful-representation">Faithful Representation</h2>
+
+<p>The analysis and results presented in the project accurately reflect the genomic data of the studied species. The methodology ensures a faithful representation of the data, minimizing biases and errors.</p>
+
+<h2 id="comparability">Comparability</h2>
+
+<p>The structured approach and uniform data processing allow for a high degree of comparability across species. The use of consistent metrics and methods ensures that the comparisons are valid and meaningful.</p>
+
+<h2 id="understandability">Understandability</h2>
+
+<p>The project is structured in a way that makes the complex data and findings accessible and understandable to a wide audience, including those who may not have an in-depth background in genomics.</p>
+
+<h3 id="source-code">Source Code</h3>
+
+<p>The project is publicly available on my <a href="https://github.com/malsuwailm/comprehensive-analysis-of-genomic-data-across-multiple-species">Github Repository</a> and is open for further contributions.</p>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <h2 class="footer-title"></h2>
+          <ul>
+            
+            
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            
+            <li class="">
+              <a href="/contact/">Contact</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          
+            <div class="social">
+  
+    <a href="https://github.com/malsuwailm" target="blank"><img src="/images/social/github.svg" title="Github" alt="Github" /></a>
+  
+    <a href="mailto:moneerax@gmail.com " target="blank"><img src="/images/social/email.svg" title="Email" alt="Email" /></a>
+  
+</div>
+
+          
+          
+          <div class="copyright"></div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  
+</body>
+</html>

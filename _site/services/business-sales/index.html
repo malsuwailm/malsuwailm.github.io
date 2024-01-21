@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Neural Tactics and AI Theory</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
+  <!-- Google Fonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Self host font -->
+  <!-- <link rel="preload" href="/assets/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin> -->
+  <link href="/assets/css/style.css" rel="stylesheet">
+  
+  
+  <meta property="og:title" content="Neural Tactics and AI Theory"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content=""/>
+  
+  
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content=""/>
+  <meta name="twitter:creator" content=""/>
+
+</head>
+
+<body class='page page-service'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/services/">Projects</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Publications</a>
+    </li>
+    
+    <li class="">
+      <a href="/contact/">Contact</a>
+    </li>
+    
+  </ul>
+</div>
+
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="main-website">
+      <a href="/">Home</a>
+    </div>
+    
+    <div id="main-menu" class="main-menu">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/services/">Projects</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Publications</a>
+    </li>
+    
+    <li class="">
+      <a href="/contact/">Contact</a>
+    </li>
+    
+  </ul>
+</div>
+
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+    <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="service service-single">
+        <h1 class="title">Neural Tactics and AI Theory</h1>
+        <div class="content"><p>This project delves into the realm of data science and artificial intelligence to tackle the strategic optimization of game theory using Q-learning. Through iterative learning and data-driven decision-making, the initiative aims to enhance the gameplay of an AI agent. It encapsulates the core data science process: collecting game state data, learning from this data through reinforcement learning, and validating the strategy through extensive simulation and statistical analysis.</p>
+
+<p><img src="https://i.ibb.co/V3j3KsF/Screenshot-from-2024-01-20-22-07-37.png" alt="QLearning VS Deep Q Learning" /></p>
+
+<h2 id="abstract">Abstract</h2>
+
+<p>The classical game of Nim, with its roots in mathematical strategy, provides a fertile ground for advancing computational intelligence and game theory through artificial intelligence (AI). This project harnesses Q-learning, a model-free reinforcement learning algorithm, to develop an AI that can master the intricacies of Nim. Unlike traditional approaches that rely on pre-existing datasets, our AI agent actively generates its own data through gameplay, which constitutes state-action-reward sequences. These sequences are then used to update the Q-table, serving as the agent’s evolving knowledge base.</p>
+
+<p>The project’s focus is on the AI’s ability to learn and refine its strategies through continuous interaction with the game environment. By analyzing the changes in the Q-table and monitoring the win rates against both random and deterministic “guru” opponents, we gain insights into the AI’s learning patterns, including its adaptability and any potential plateaus in performance. Through statistical methods and data visualization techniques, we chart the agent’s progression, highlighting the dynamic balance between exploration of new strategies and exploitation of known tactics.</p>
+
+<p>Our approach demonstrates how AI can engage with classic games in a data-driven manner, optimizing decision-making processes without the need for an external dataset. This self-sufficient learning mechanism underscores the potential of integrating game theory with neural tactics in AI, paving the way for further research into strategic AI applications. The project exemplifies the convergence of theoretical principles and practical algorithmic implementation, contributing to the discourse on AI’s role in strategic gameplay and beyond.</p>
+
+<h2 id="objectives">Objectives</h2>
+
+<ol>
+  <li>
+    <p><strong>Strategic AI Development:</strong> To program an AI that can master Nim through Q-learning, capable of adjusting strategies in response to game dynamics.</p>
+  </li>
+  <li>
+    <p><strong>Performance Optimization:</strong> To enhance the AI’s gameplay by iteratively improving win rates against both random and expert opponents.</p>
+  </li>
+  <li>
+    <p><strong>Analytical Visualization:</strong> To utilize data visualization techniques for depicting the AI’s learning progression and strategy effectiveness over time.</p>
+  </li>
+</ol>
+
+<h2 id="relevance">Relevance</h2>
+
+<p>The relevance of this project lies in its intersection with data science, AI, and game theory. Nim, a game grounded in mathematical strategy, provides a perfect testbed for reinforcement learning algorithms. This project contributes to the field of data science by demonstrating how machine learning can be applied to strategic decision-making, offering insights that extend beyond gaming into areas such as optimization problems and economic modeling.</p>
+
+<h2 id="methodology">Methodology</h2>
+
+<p>The methodology of this project is structured around a data science lifecycle, which consists of the following steps:</p>
+
+<ol>
+  <li>
+    <p><strong>Algorithm Design and Implementation:</strong> The core of the project is the design of the Q-learning algorithm, which is implemented to interact with the game environment of Nim. Q-learning is a type of model-free reinforcement learning algorithm that learns a policy dictating the best action to take given the current state.</p>
+  </li>
+  <li>
+    <p><strong>Data Generation:</strong> Instead of using a pre-existing dataset, the project generates its own data through simulations. Every game played between the AI agents (Qlearner, Random, and Guru) generates state-action-reward sequences that are stored and used to update the Q-table, which effectively becomes the dataset.</p>
+  </li>
+  <li>
+    <p><strong>Learning Process:</strong> The Q-table, representing the state-action space of the Nim game, is iteratively updated as the AI agents play each game. The Q-values are adjusted using the reward signals received, with the goal of maximizing future rewards. This represents the AI’s learning process from the generated data.</p>
+  </li>
+  <li>
+    <p><strong>Performance Evaluation and Analysis:</strong> The evaluation of the AI’s strategy is performed through statistical analysis of win rates across a number of simulated games. This measures the effectiveness of the learned strategies and the AI’s ability to adapt and improve over time.</p>
+  </li>
+  <li>
+    <p><strong>Data Visualization:</strong> The results of the performance evaluation are visualized using matplotlib to create plots that depict the learning progression and win rates. These visualizations serve as a tool for interpreting the data and extracting insights about the AI’s learning trajectory.</p>
+  </li>
+  <li>
+    <p><strong>Iterative Optimization:</strong> Based on the insights gained from the performance evaluation and data analysis, the learning parameters such as Alpha (learning rate) and Gamma (discount factor) are fine-tuned to optimize the AI’s gameplay.</p>
+  </li>
+</ol>
+
+<p>By focusing on the continuous cycle of gameplay simulation, data generation, strategy evaluation, and visualization, the project embodies a data science approach to developing AI game strategies.</p>
+
+<h2 id="results">Results</h2>
+
+<p>QLearner vs Random (Winning Start Position)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Training Sessions</th>
+      <th>QLearner Wins</th>
+      <th>Random Wins</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3</td>
+      <td>5204</td>
+      <td>4796</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>5312</td>
+      <td>4688</td>
+    </tr>
+    <tr>
+      <td>100</td>
+      <td>7653</td>
+      <td>2347</td>
+    </tr>
+    <tr>
+      <td>1000</td>
+      <td>9219</td>
+      <td>781</td>
+    </tr>
+    <tr>
+      <td>10000</td>
+      <td>9919</td>
+      <td>81</td>
+    </tr>
+    <tr>
+      <td>50000</td>
+      <td>9983</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>100000</td>
+      <td>9989</td>
+      <td>11</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>QLearner vs Guru (Winning Start Position)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Training Sessions</th>
+      <th>QLearner Wins</th>
+      <th>Guru Wins</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3</td>
+      <td>46</td>
+      <td>9954</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>33</td>
+      <td>9967</td>
+    </tr>
+    <tr>
+      <td>100</td>
+      <td>87</td>
+      <td>9913</td>
+    </tr>
+    <tr>
+      <td>1000</td>
+      <td>464</td>
+      <td>9536</td>
+    </tr>
+    <tr>
+      <td>10000</td>
+      <td>3631</td>
+      <td>6369</td>
+    </tr>
+    <tr>
+      <td>50000</td>
+      <td>8074</td>
+      <td>1926</td>
+    </tr>
+    <tr>
+      <td>100000</td>
+      <td>9246</td>
+      <td>754</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Random vs QLearner (Losing Start Position)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Training Sessions</th>
+      <th>Random Wins</th>
+      <th>QLearner Wins</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3</td>
+      <td>4685</td>
+      <td>5315</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>3994</td>
+      <td>6006</td>
+    </tr>
+    <tr>
+      <td>100</td>
+      <td>2513</td>
+      <td>7487</td>
+    </tr>
+    <tr>
+      <td>1000</td>
+      <td>983</td>
+      <td>9017</td>
+    </tr>
+    <tr>
+      <td>10000</td>
+      <td>175</td>
+      <td>9825</td>
+    </tr>
+    <tr>
+      <td>50000</td>
+      <td>75</td>
+      <td>9925</td>
+    </tr>
+    <tr>
+      <td>100000</td>
+      <td>72</td>
+      <td>9928</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Guru vs QLearner (Losing Start Position)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Training Sessions</th>
+      <th>Guru Wins</th>
+      <th>QLearner Wins</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3</td>
+      <td>9993</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>9989</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>100</td>
+      <td>9975</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>1000</td>
+      <td>9877</td>
+      <td>123</td>
+    </tr>
+    <tr>
+      <td>10000</td>
+      <td>9568</td>
+      <td>432</td>
+    </tr>
+    <tr>
+      <td>50000</td>
+      <td>9405</td>
+      <td>595</td>
+    </tr>
+    <tr>
+      <td>100000</td>
+      <td>9379</td>
+      <td>621</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="data-visualization">Data Visualization</h2>
+
+<p><img src="https://i.ibb.co/xgvTbWC/Screenshot-from-2024-01-21-01-57-19.png" alt="Qlearner Performance Comparison in Winning Starting Position" /></p>
+
+<p><img src="https://i.ibb.co/xCbzTkP/Screenshot-from-2024-01-21-01-57-52.png" alt="Qlearner Performance Comparison in Losing Starting Position" /></p>
+
+<h2 id="analysis">Analysis</h2>
+
+<p>The results presented in the two charts depict the performance of a Q-learning AI in the game of Nim across various training games, measured by the win rate against two types of opponents: Random and Guru. In the context of these charts, the term ‘Guru’ likely refers to a strategy that plays optimally or near-optimally.</p>
+
+<p>The first chart, illustrating the “Winning Starting Position,” shows an overall increasing trend in win rate against the Random opponent, plateauing at high win rates. This demonstrates the Q-learner’s ability to exploit the randomness and mistakes of the non-strategic opponent from a position of advantage. However, against the Guru, the win rate increases initially but then drops significantly at the higher number of training games. A possible interpretation is that as the Q-learner becomes more deterministic in its strategy through learning, it becomes predictable and easier for the Guru to counter, especially if the Guru employs a strategy based on the Q-learner’s moves.</p>
+
+<p>Meanwhile, in the second chart, representing the “Losing Starting Position,” there is a noticeable slow trend of win rate starting in the latter half as the number of training games crosses the 1000 mark when facing the Guru opponent. This could suggest that the Q-learner is struggling to find a winning strategy at the beginning against an opponent that likely has a deterministic advantage from the start, but as the number of games is increasing after 1000 games, the win rate slowly increases as well. Against the Random opponent, the Q-learner’s performance remains high throughout, indicating that the AI can capitalize on the non-deterministic nature of its opponent, despite the initial disadvantage.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>From these observations, it is apparent that the Q-learning AI is quite effective against opponents with non-deterministic strategies (Random) but faces challenges when up against a deterministic and possibly strategic opponent (Guru), especially when the Q-learner starts from a disadvantaged position. The performance against the Random opponent is consistently high, suggesting that the AI is successfully learning strategies that exploit the randomness and lack of optimality in the Random opponent’s play.</p>
+
+<p>Against the Guru, the AI initially learns effective strategies, as indicated by the increase in win rate, but this trend does not hold in the long run when the AI is in the winning starting position. This could be due to the Q-learner converging on a suboptimal deterministic strategy that the Guru can exploit.</p>
+
+<p>These insights could lead to several actionable steps for improving the Q-learning algorithm:</p>
+
+<ul>
+  <li><strong>Strategy Diversification:</strong> Introducing non-deterministic elements or noise into the Q-learner’s strategy to make it less predictable against strategic opponents.</li>
+  <li><strong>Opponent Modeling:</strong> Incorporating models of the opponent’s strategy into the Q-learner to better anticipate and counter strategic plays.</li>
+  <li><strong>Hyperparameter Tuning:</strong> Adjusting the learning rate (Alpha) and discount factor (Gamma) to see if slower or faster learning affects the AI’s ability to adapt to strategic opponents.</li>
+</ul>
+
+<p>In summary, the Q-learning AI shows promise in learning effective strategies for the game of Nim, especially from a strong starting position and against non-strategic opponents. However, there is room for improvement, particularly in games where the AI starts at a disadvantage and against opponents with deterministic strategies.</p>
+
+<h2 id="faithful-representation">Faithful Representation:</h2>
+
+<p>The project ensures faithful representation by accurately reporting the AI’s performance without bias. The win rates and learning curves are presented as-is, with no manipulation of the data, providing an honest depiction of the AI’s capabilities and limitations.</p>
+
+<h2 id="comparability">Comparability:</h2>
+
+<p>Comparability is maintained by consistently evaluating the AI against the same opponents and under the same conditions throughout the training process. This allows for a fair comparison of performance across different numbers of training games and provides reliable insights into the learning progress.</p>
+
+<h2 id="understandability">Understandability:</h2>
+
+<p>To ensure understandability, the project presents data and findings in a clear, concise manner, with graphical visualizations that simplify complex concepts. Detailed annotations and explanations accompany each plot and statistical result, making the project’s insights accessible to both technical and non-technical audiences.</p>
+
+<h3 id="source-code">Source Code</h3>
+
+<p>The project is publicly available on my <a href="https://github.com/malsuwailm/neural-tactics-and-AI-theory">Github Repository</a> and is open for further contributions.</p>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <h2 class="footer-title"></h2>
+          <ul>
+            
+            
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            
+            <li class="">
+              <a href="/contact/">Contact</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          
+            <div class="social">
+  
+    <a href="https://github.com/malsuwailm" target="blank"><img src="/images/social/github.svg" title="Github" alt="Github" /></a>
+  
+    <a href="mailto:moneerax@gmail.com " target="blank"><img src="/images/social/email.svg" title="Email" alt="Email" /></a>
+  
+</div>
+
+          
+          
+          <div class="copyright"></div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  
+</body>
+</html>

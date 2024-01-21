@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Github",
+    "link": "https://github.com/malsuwailm",
+    "image": "images/social/github.svg"
+  },
+  {
+    "name": "Email",
+    "link": "mailto:moneerax@gmail.com ",
+    "image": "images/social/email.svg"
+  }
+]
